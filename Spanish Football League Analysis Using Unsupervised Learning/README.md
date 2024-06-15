@@ -52,12 +52,17 @@ PCA was carried on the datasets with columns relevant to the forwards. 4 princip
 
 **1st Principle Component: False 9/Wingers vs Traditional Strikers**
 
-The 1st Principle Component acoounts for 31% of the total variation. Majority of loadings are positive, and those few negatives can be classified insignificant. Thne first component is along the direction of nature of forwards. Players with a positive PC1 score can be classified as False 9/Wingers, who are good at creating goal scoring opportunities, setting up of goals, are pretty much involved in the game, and the attacks run through them. These include A. Griezmann, L. Ocampus, I. Aspas, F. Olivera, etc. Players with negative PC1 scores are more of traditional strikers, who are focus on scoring goals, d not touch the ball quite often, lie around/behind the defenders and are relied on players to feed them balls to score. These inlcude players like R. Yaremchuk, J. Morales, U. Sadiq, I. Romero, etc. Refer the plot to know more about differnt players.
+The 1st Principle Component acoounts for 31% of the total variation. Majority of loadings are positive, and those few negatives can be classified insignificant. The first component is along the direction of nature of forwards. Players with a positive PC1 score can be classified as False 9/Wingers, who are good at creating goal scoring opportunities, setting up of goals, are pretty much involved in the game, and the attacks run through them. These include A. Griezmann, L. Ocampus, I. Aspas, F. Olivera, etc. Players with negative PC1 scores are more of traditional strikers, who are focused on scoring goals, do not touch the ball quite often, lie around/behind the defenders and are relied on players to feed them balls to score. These inlcude players like R. Yaremchuk, J. Morales, U. Sadiq, I. Romero, etc. Refer the plot to know more about differnt players.
+
+**2nd Principle Component: Prolific vs Cautious Shooters**
+
+The 2nd Principle Component accounts for 18% of total variation.  It describes the shooting abilities of forwards. Forwards with high positive score have taken lot of shots, 
 
 
-
-
-
+stabl/calm vs unstable defenders
+aerial vs ground dominance
+ball playing defenders vs defensive liability
+goal scorings vs traditional defenders
 
 
 
