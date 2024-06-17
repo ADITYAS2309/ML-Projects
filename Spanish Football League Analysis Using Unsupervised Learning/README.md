@@ -46,30 +46,42 @@ Link to the dataset: https://www.kaggle.com/datasets/sdelquin/laliga-data3
 
 ## **Results**
 
-### PCA on Forwards
+### PCA on Defenders
 
-PCA was carried on the datasets with columns relevant to the forwards. 4 principle components were selected from scree plot which explain 63% of the total variance.
+PCA was carried on the datasets with columns relevant to the defenders. 4 principle components were selected from scree plot which explain 63% of the total variance.
 
-**1st Principle Component: False 9/Wingers vs Traditional Strikers**
+**1st Principle Component: Consistent vs Irregular Starters/Gametime**
 
-The 1st Principle Component acoounts for 31% of the total variation. Majority of loadings are positive, and those few negatives can be classified insignificant. The first component is along the direction of nature of forwards. Players with a positive PC1 score can be classified as False 9/Wingers, who are good at creating goal scoring opportunities, setting up of goals, are pretty much involved in the game, and the attacks run through them. These include A. Griezmann, L. Ocampus, I. Aspas, F. Olivera, etc. Players with negative PC1 scores are more of traditional strikers, who are focused on scoring goals, do not touch the ball quite often, lie around/behind the defenders and are relied on players to feed them balls to score. These inlcude players like R. Yaremchuk, J. Morales, U. Sadiq, I. Romero, etc. Refer the plot to know more about differnt players.
+The 1st principle component accounts for 32% of the total variance. Majority of the signifcant loadings are positive. The first component represents their involvement in the game . Defenders with positive PC1 score are stable, highly involved in the game, pivotal in maintaining and rgaining possession, and are regular starters because of their reliability. These include defenders like S. Ramos, J. Kounde, S. Cardona, M. Marmal etc. While defenders with negative PC1 score are those who do not get much game time, infrequently make the starting 11, because of their unreliable nature or being injury-prone. They aren't much involved in the game and hence don't get consistent game time. These include players like  A. Sedlar, D. Alaba, A. Centelles, J. Gimenez, etc. Refer the plot to know more about differnt players.
+ 
+**2nd Principle Component: Aerial Dominant vs Ground Dominant**
 
-**2nd Principle Component: Prolific vs Cautious Shooters**
+The 2nd principle component explains 16% of the total variance. The significant loadings are evently distributed across the 2 signs. The 2nd principle component is along the dominant nature of defenders. The positive loadings describe strong dominance on ground while the negative loadings describe the towering nature of defenders, who have strong aerial dominance. Defenders with high positive PC2 score excel in abilities on ground. These include Y. Couto, J. Cancelo, M. Gutierrez etc. While defenders with large negative PC2 score are dominant in air. These include R. Le Normand, S. Ramos, F. Lejeune etc.
 
-The 2nd Principle Component accounts for 18% of total variation.  It describes the shooting abilities of forwards. Forwards with high positive score have taken lot of shots, 
+**3rd Principle Component: Ball Playing Defenders vs Defensive Liable Defenders**
 
+This component explains around 9% of the total variance. It is along the direction of ball playing nature vs defensively liable defenders. Players with high PC3 score are ball playing defenders, who love distributing the ball from back to building attacks. The excel in their passing abilites. These include M. Gutierrez, D. Carvajal, D. Blind, etc. Players with large negative PC3 score struggle in maintaining defensive stability, vulnerabilites in backline, undisciplined, defense liability, and not good at keeping cleansheets. These include R. Marin, A. Abqar, A. Gorosabel etc.
 
-stabl/calm vs unstable defenders
-aerial vs ground dominance
-ball playing defenders vs defensive liability
-goal scorings vs traditional defenders
+**4th Principle Component: Goal Scoring vs Traditional Defenders**
 
-
-
-
+4th component explains 6% of the toal variance. It represents thier attacking vs traditional nature of defenders. Majority of significant loadings are positive. Defenders with high PC4 score are goal scoring defenders, who show their attacking nature and score goals. These include D. Carvajal, E. Garcia, A. Raillo etc. While defenders with large negative PC4 are traditional defenders, who are more defendsively focus, and prefer to sit back and defend. These include D. Blind, M. Marmol, C. Neva, etc.
 
 
+Similar analysis can be performed on forwards, midfielders, and goalkeepers. Analysis on forwards in done in the jupyter notebooks.
 
+
+## Other Analysis
+
+**Team Analysis**
+
+The principle component scores of players can be aggregated to get team principle scores, which can be used for analysis. This is done in jupyter notebook for comparing the defensive attributes across teams. Analysis for it can be done in same way as above. 
+
+Aggregated team scores can be computed in various ways which include sum of individual PC scores, average, weighted average, and so on. Weighted average is used in the notebook with minutes played by each player as weight.
+
+
+**Player Comparision**
+
+The principle scores for individual players can we used to compare players across different attributes, to find players with similar/different nature. This can be done by clustering the combined PC scores to group players who show similar playng patterns/styles. Another method is using principle compomemt score vector norm for each player and computing the euclidean distance between 2 players. Players with small distance would show similar patterns and those with large distances would be different from each other.
 
 
 
